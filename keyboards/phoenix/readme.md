@@ -1,3 +1,6 @@
+## In this repo
+I use this repo to save my personal configuration and modification. No intention to merge to upstream repo. You can use my via-enabled config with my keymaps. The via draft definition file is phoenix_via.json
+
 # Phoenix
 
 ![Phoenix](https://imgur.com/adJiuMHl.jpg)
