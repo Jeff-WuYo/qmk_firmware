@@ -1,5 +1,5 @@
 ## In this repo
-- I use this repo to save my personal configuration and modification. No intention to merge to upstream repo. You can use my config with my keymaps. The via draft definition file can be found at [original upstream repo](https://github.com/ouser555/ergodashv99v5/tree/main/VIA configurator)
+- I use this repo to save my personal configuration and modification. No intention to merge to upstream repo. You can use my config with my keymaps. The via draft definition file can be found at [original upstream repo](https://github.com/ouser555/ergodashv99v5/tree/main/VIA%20configurator)
 - You can use `qmk compile -kb ergodashv99v5/rev2 -km v99v5` to compile the firmware, and `qmk flash -kb ergodashv99v5/rev2 -km v99v5` to flash the firmware.
 
 # ergodashv99v5
