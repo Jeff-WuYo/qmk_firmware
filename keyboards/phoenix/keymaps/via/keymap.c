@@ -2,7 +2,7 @@
 
 enum layers {
     BASE,  // default qwerty
-    FIRST, // colemak-dh modified
+    FIRST, // colemak-dh
     SECOND, // functinos
 };
 
@@ -47,16 +47,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_HOME,
     MO(2),   KC_ENT,  KC_SPC),
 
-/* Keymap 1: colemak-dk modified
+/* Keymap 1: colemak-dk
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |  ESC`  |   1  |   2  |   3  |   4  |   5  |   6  |           |  EQL |   6  |   7  |   8  |   9  |   0  |  MINS  |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |  TAB   |   Q  |   W  |   F  |   P  |   B  |  F5  |           | RCTL |   K  |   H  |   U  |   Y  |  ;   |   \    |
+ * |  TAB   |   Q  |   W  |   F  |   P  |   B  |  F5  |           | RCTL |   J  |   L  |   U  |   Y  |  ;   |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |  LCTL  |   A  |   R  |   S  |   T  |   G  |------|           |------|   M  |   N  |   E  |   I  |  O   |   '    |
  * |--------+------+------+------+------+------| LGUI |           | RGUI |------+------+------+------+------+--------|
- * | LShift |   Z  |   X  |   C  |   D  |   V  |      |           |      |   J  |   L  |   ,  |   .  |  /   | RShift |
+ * | LShift |   Z  |   X  |   C  |   D  |   V  |      |           |      |   K  |   H  |   ,  |   .  |  /   | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   | MO(2)|Delete| LALT |   [  |   ]  |                                       | LEFT | DOWN |  UP  | RIGHT| MO(2)  |
  *   `----------------------------------'                                       `----------------------------------'
@@ -79,9 +79,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                  KC_SPC,  KC_BSPC, TG(1),
 
              KC_EQL,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS,
-             KC_RCTL, KC_K,    KC_H,    KC_U,    KC_Y,    KC_SCLN, KC_BSLS,
+             KC_RCTL, KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSLS,
                       KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT,
-             KC_RGUI, KC_J,    KC_L,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+             KC_RGUI, KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
                                KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, MO(2),
     KC_PGDN, KC_PGUP,
     KC_HOME,
