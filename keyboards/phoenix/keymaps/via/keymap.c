@@ -47,14 +47,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_HOME,
     MO(2),   KC_ENT,  KC_SPC),
 
-/* Keymap 1: colemak-dk
+/* Keymap 1: colemak-dh
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |  ESC`  |   1  |   2  |   3  |   4  |   5  |   6  |           |  EQL |   6  |   7  |   8  |   9  |   0  |  MINS  |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * |  TAB   |   Q  |   W  |   F  |   P  |   B  |  F5  |           | RCTL |   J  |   L  |   U  |   Y  |  ;   |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |  LCTL  |   A  |   R  |   S  |   T  |   G  |------|           |------|   M  |   N  |   E  |   I  |  O   |   '    |
+ * |  LCTL  |GUI_A |ALT_R |SFT_S |CTL_T |   G  |------|           |------|   M  |CTL_N |SFT_E |ALT_I |GUI_O |   '    |
  * |--------+------+------+------+------+------| LGUI |           | RGUI |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   D  |   V  |      |           |      |   K  |   H  |   ,  |   .  |  /   | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -69,20 +69,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 `--------------------'       `----------------------'
  */
 [FIRST] = LAYOUT_ergodox(
-    QK_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,
-    KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_F5,
-    KC_LCTL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,
-    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_LGUI,
-    MO(2),   KC_DEL,  KC_LALT, KC_LBRC, KC_RBRC,
+    QK_GESC, KC_1,         KC_2,         KC_3,         KC_4,         KC_5,    KC_6,
+    KC_TAB,  KC_Q,         KC_W,         KC_F,         KC_P,         KC_B,    KC_F5,
+    KC_LCTL, LGUI_T(KC_A), LALT_T(KC_R), LSFT_T(KC_S), LCTL_T(KC_T), KC_G,
+    KC_LSFT, KC_Z,         KC_X,         KC_C,         KC_D,         KC_V,    KC_LGUI,
+    MO(2),   KC_DEL,       KC_LALT,      KC_LBRC,      KC_RBRC,
                                                           KC_VOLD, KC_VOLU,
                                                                    KC_MUTE,
                                                  KC_SPC,  KC_BSPC, TG(1),
 
-             KC_EQL,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS,
-             KC_RCTL, KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSLS,
-                      KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT,
-             KC_RGUI, KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
-                               KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, MO(2),
+             KC_EQL,       KC_6,    KC_7,         KC_8,         KC_9,         KC_0,         KC_MINS,
+             KC_RCTL,      KC_J,    KC_L,         KC_U,         KC_Y,         KC_SCLN,      KC_BSLS,
+                           KC_M,    RCTL_T(KC_N), RSFT_T(KC_E), RALT_T(KC_I), RGUI_T(KC_O), KC_QUOT,
+             KC_RGUI,      KC_K,    KC_H,         KC_COMM,      KC_DOT,       KC_SLSH,      KC_RSFT,
+                                    KC_LEFT,      KC_DOWN,      KC_UP,        KC_RGHT,      MO(2),
     KC_PGDN, KC_PGUP,
     KC_HOME,
     MO(2),   KC_ENT,  KC_SPC),
